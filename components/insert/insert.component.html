@@ -1,0 +1,21 @@
+<div align="center">
+  <fieldset>
+    <legend>Insert</legend>
+    <label style="margin-right: 100px">E_ID:</label>
+    <input type="number" number="e_id" [(ngModel)]="e_id">
+
+    <br><br>
+    <label style="margin-right: 80px">E_Name:</label>
+    <input type="text"  name="e-name" [(ngModel)]="e_name">
+
+    <br><br>
+    <label style="margin-right: 100px">E_Sal:</label>
+    <input type="number" sal="e-sal" [(ngModel)]="e_sal">
+
+    <br><br>
+    <button (click)="insert({'e_id':e_id,
+                             'e_name':e_name,
+                             'e_sal':e_sal})">Insert</button>
+  </fieldset>
+  <h1>{{insertStatus | json}}</h1>
+</div>

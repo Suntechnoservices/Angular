@@ -1,0 +1,11 @@
+<div align="center">
+  <fieldset>
+    <legend>Delete</legend>
+    <label style="margin-right: 100px">E_ID:</label>
+    <input type="number" number="id_" [(ngModel)]="id_">
+
+    <br><br>
+    <button (click)="remove({'e_id':id_})">Delete</button>
+  </fieldset>
+  <h1>{{removeStatus | json}}</h1>
+</div>

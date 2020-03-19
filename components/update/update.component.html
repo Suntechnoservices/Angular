@@ -1,0 +1,21 @@
+<div align="center">
+  <fieldset>
+    <legend>Update</legend>
+    <label style="margin-right: 100px">E_ID:</label>
+    <input type="number" number="_id"  [(ngModel)]="_id">
+
+    <br><br>
+    <label style="margin-right: 80px">E_Name:</label>
+    <input type="text" name="_name" [(ngModel)]="_name">
+
+    <br><br>
+    <label style="margin-right: 100px">E_Sal:</label>
+    <input type="number" number="_sal" [(ngModel)]="_sal">
+
+    <br><br>
+    <button (click)="update({'e_id':_id,
+                             'e_name':_name,
+                             'e_sal':_sal})">Update</button>
+  </fieldset>
+  <h1>{{updateStatus | json}}</h1>
+</div>

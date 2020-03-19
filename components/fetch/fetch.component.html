@@ -1,0 +1,28 @@
+<table align="center"
+       border="1"
+       cellpadding="10px"
+       cellspacing="10px"
+       style="font-size: 30px;text-align: center">
+       <thead style="background-color: gray">
+          <tr>
+            <th>SNO</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Sal</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let x of records;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{x.e_id}}</td>
+            <td>{{x.e_name}}</td>
+            <td>{{x.e_sal}}</td>
+         </tr>
+       </tbody>
+</table>
+<hr>
+<insert [var_one]="records"></insert>
+<hr>
+<update [var_one]="records"></update>
+<hr>
+<delete [var_one]="records"></delete>
